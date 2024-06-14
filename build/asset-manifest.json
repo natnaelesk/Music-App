@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e5c848a.css",
+    "main.js": "/static/js/main.ae35304e.js",
+    "static/js/453.7057b6be.chunk.js": "/static/js/453.7057b6be.chunk.js",
+    "static/media/test.jpg": "/static/media/test.35879bc93fffd03b56f8.jpg",
+    "static/media/Desktop.jpg": "/static/media/Desktop.e1e20dd55f52197df1f0.jpg",
+    "static/media/star.png": "/static/media/star.85f4dd481701858b9cd0.png",
+    "static/media/FMF-Header.jpg": "/static/media/FMF-Header.921c2c67ca3b79509f21.jpg",
+    "static/media/music-1005-svgrepo-com.svg": "/static/media/music-1005-svgrepo-com.0a1f03dc7d9d0fe4df144575efe9e013.svg",
+    "static/media/play.svg": "/static/media/play.f058a8027237715c1026c1d1b0b5f377.svg",
+    "static/media/pause-svgrepo-com.svg": "/static/media/pause-svgrepo-com.e2fc2abe2810d4cc46c0546986d50666.svg",
+    "static/media/image-svgrepo-com.svg": "/static/media/image-svgrepo-com.3dee5852ddcc2d2296e48a85f9e1686f.svg",
+    "static/media/menu-dots-svgrepo-com.svg": "/static/media/menu-dots-svgrepo-com.670b69284bb1fa212d7b3de683744203.svg",
+    "static/media/back.svg": "/static/media/back.29a7f8fa6672adcb649264df73896f60.svg",
+    "static/media/next.svg": "/static/media/next.ed2f8094e4ecd4635e0508c58185168e.svg",
+    "index.html": "/index.html",
+    "main.1e5c848a.css.map": "/static/css/main.1e5c848a.css.map",
+    "main.ae35304e.js.map": "/static/js/main.ae35304e.js.map",
+    "453.7057b6be.chunk.js.map": "/static/js/453.7057b6be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e5c848a.css",
+    "static/js/main.ae35304e.js"
+  ]
+}

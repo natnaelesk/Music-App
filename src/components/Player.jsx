@@ -33,12 +33,10 @@ const Player = ({ selectedSongIndex }) => {
 
       const handleCanPlay = () => {
         setIsLoading(false);
-        if (isPlaying) {
-          audioRef.current.play().catch((error) => {
-            console.error('Error playing audio:', error);
-            setIsPlaying(false);
-          });
-        }
+        audioRef.current.play().catch((error) => {
+          console.error('Error playing audio:', error);
+          setIsPlaying(false);
+        });
       };
 
       const handleAudioError = (event) => {
@@ -67,6 +65,13 @@ const Player = ({ selectedSongIndex }) => {
       currentAudio.addEventListener('error', handleAudioError);
       currentAudio.addEventListener('ended', handleEnded);
 
+      // Always play the new song, even if previously paused
+      audioRef.current.play().catch((error) => {
+        console.error('Error playing audio:', error);
+        setIsPlaying(false);
+      });
+      setIsPlaying(true);
+
       return () => {
         currentAudio.pause();
         currentAudio.removeEventListener('timeupdate', updateProgress);
@@ -80,7 +85,7 @@ const Player = ({ selectedSongIndex }) => {
       setIsPlaying(false);
       setIsLoading(false);
     }
-  }, [currentSongIndex, songs, isPlaying, handleNext]);
+  }, [currentSongIndex, songs, handleNext]);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -114,7 +119,6 @@ const Player = ({ selectedSongIndex }) => {
       {isLoading && (
         <div className="loading">
           <div className="container">
-            {/* Replace with your loading animation or spinner */}
             <div className="dot"></div>
             <div className="dot"></div>
             <div className="dot"></div>

@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router  basename="/Music-App">
       {uploading && (
         <div className="loading">
           <div class="container">
